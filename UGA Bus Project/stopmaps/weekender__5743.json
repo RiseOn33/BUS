@@ -1,0 +1,154 @@
+{
+  "gtfs_route_id": "5743",
+  "route_name": "Weekender",
+  "representative_trip_id": "936666",
+  "stops": [
+    {
+      "stop_id": "175017",
+      "name": "University Village Circle",
+      "lat": 33.926283572,
+      "lon": -83.377377373,
+      "seq": 1
+    },
+    {
+      "stop_id": "177708",
+      "name": "Brandon Oaks",
+      "lat": 33.929417971,
+      "lon": -83.379039682,
+      "seq": 2
+    },
+    {
+      "stop_id": "175103",
+      "name": "East Campus Rd. at Rogers Rd.",
+      "lat": 33.931126561,
+      "lon": -83.377891192,
+      "seq": 3
+    },
+    {
+      "stop_id": "155090",
+      "name": "University Village Building G",
+      "lat": 33.933902,
+      "lon": -83.37598,
+      "seq": 4
+    },
+    {
+      "stop_id": "155137",
+      "name": "University Village Building F",
+      "lat": 33.935232,
+      "lon": -83.375304,
+      "seq": 5
+    },
+    {
+      "stop_id": "155094",
+      "name": "East Campus Village",
+      "lat": 33.938039,
+      "lon": -83.368513,
+      "seq": 6
+    },
+    {
+      "stop_id": "155088",
+      "name": "Aderhold Hall Westbound",
+      "lat": 33.941314,
+      "lon": -83.372864,
+      "seq": 7
+    },
+    {
+      "stop_id": "155116",
+      "name": "Plant Sciences",
+      "lat": 33.94187,
+      "lon": -83.375106,
+      "seq": 8
+    },
+    {
+      "stop_id": "155117",
+      "name": "Coliseum/SLC Westbound",
+      "lat": 33.942887,
+      "lon": -83.377231,
+      "seq": 9
+    },
+    {
+      "stop_id": "198803",
+      "name": "Myers/Snelling Northbound",
+      "lat": 33.945465065,
+      "lon": -83.376504078,
+      "seq": 10
+    },
+    {
+      "stop_id": "155107",
+      "name": "Rutherford Hall Westbound",
+      "lat": 33.947555,
+      "lon": -83.377133187,
+      "seq": 11
+    },
+    {
+      "stop_id": "155103",
+      "name": "West Campus at Russell Hall Northbound",
+      "lat": 33.949587,
+      "lon": -83.380566,
+      "seq": 12
+    },
+    {
+      "stop_id": "155164",
+      "name": "West Campus at Black-Diallo-Miller Hall",
+      "lat": 33.950054,
+      "lon": -83.379086,
+      "seq": 13
+    },
+    {
+      "stop_id": "155102",
+      "name": "West Campus at Creswell Hall",
+      "lat": 33.949103875,
+      "lon": -83.380219519,
+      "seq": 14
+    },
+    {
+      "stop_id": "177709",
+      "name": "West Campus at Oglethorpe House",
+      "lat": 33.948236167,
+      "lon": -83.379053094,
+      "seq": 15
+    },
+    {
+      "stop_id": "155106",
+      "name": "Rutherford Hall Eastbound",
+      "lat": 33.947538,
+      "lon": -83.376799,
+      "seq": 16
+    },
+    {
+      "stop_id": "155104",
+      "name": "Physics Northbound",
+      "lat": 33.948332,
+      "lon": -83.376913,
+      "seq": 17
+    },
+    {
+      "stop_id": "155100",
+      "name": "Tate Center - Memorial Hall",
+      "lat": 33.951439,
+      "lon": -83.374245,
+      "seq": 18
+    },
+    {
+      "stop_id": "155097",
+      "name": "Lumpkin St. at Wray St. Northbound",
+      "lat": 33.95458,
+      "lon": -83.376482,
+      "seq": 19
+    },
+    {
+      "stop_id": "155145",
+      "name": "Prince Ave. at Nacoochee Ave.",
+      "lat": 33.962229,
+      "lon": -83.395411,
+      "seq": 20
+    },
+    {
+      "stop_id": "155146",
+      "name": "Health Sciences Campus",
+      "lat": 33.9645,
+      "lon": -83.4043,
+      "seq": 21
+    }
+  ]
+}

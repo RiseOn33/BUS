@@ -1,0 +1,161 @@
+{
+  "gtfs_route_id": "5738",
+  "route_name": "Milledge",
+  "representative_trip_id": "994145",
+  "stops": [
+    {
+      "stop_id": "155085",
+      "name": "Main Library",
+      "lat": 33.955035,
+      "lon": -83.373165,
+      "seq": 1
+    },
+    {
+      "stop_id": "155099",
+      "name": "Tate Center - Instructional Plaza",
+      "lat": 33.951973,
+      "lon": -83.373179,
+      "seq": 2
+    },
+    {
+      "stop_id": "155153",
+      "name": "Lumpkin St. at BLC",
+      "lat": 33.952409,
+      "lon": -83.376685,
+      "seq": 3
+    },
+    {
+      "stop_id": "198532",
+      "name": "Baxter St. at Church St.",
+      "lat": 33.950183082,
+      "lon": -83.383636204,
+      "seq": 4
+    },
+    {
+      "stop_id": "198941",
+      "name": "Milledge Ave. at Peabody St. Southbound",
+      "lat": 33.948327082,
+      "lon": -83.387564077,
+      "seq": 5
+    },
+    {
+      "stop_id": "155126",
+      "name": "Milledge Ave. at Springdale St.",
+      "lat": 33.9461,
+      "lon": -83.3878,
+      "seq": 6
+    },
+    {
+      "stop_id": "207668",
+      "name": "Milledge Ave. at Rutherford St. Southbound",
+      "lat": 33.943256022,
+      "lon": -83.387890291,
+      "seq": 7
+    },
+    {
+      "stop_id": "155128",
+      "name": "Milledge Ave. at Oakland Ave. Southbound",
+      "lat": 33.940522,
+      "lon": -83.387422,
+      "seq": 8
+    },
+    {
+      "stop_id": "155129",
+      "name": "Lumpkin St. at Rutherford St. Northbound",
+      "lat": 33.942104,
+      "lon": -83.384724,
+      "seq": 9
+    },
+    {
+      "stop_id": "155106",
+      "name": "Rutherford Hall Eastbound",
+      "lat": 33.947538,
+      "lon": -83.376799,
+      "seq": 10
+    },
+    {
+      "stop_id": "155112",
+      "name": "Myers/Snelling Southbound",
+      "lat": 33.946279,
+      "lon": -83.376299,
+      "seq": 11
+    },
+    {
+      "stop_id": "155131",
+      "name": "Lumpkin St. at Smith St.",
+      "lat": 33.944231,
+      "lon": -83.380654,
+      "seq": 12
+    },
+    {
+      "stop_id": "155130",
+      "name": "Lumpkin St. at Rutherford St. Southbound",
+      "lat": 33.942316,
+      "lon": -83.384513,
+      "seq": 13
+    },
+    {
+      "stop_id": "155092",
+      "name": "Milledge Ave. at Oakland Ave. Northbound",
+      "lat": 33.941294,
+      "lon": -83.387528,
+      "seq": 14
+    },
+    {
+      "stop_id": "155127",
+      "name": "Milledge Ave. at Rutherford St. Northbound",
+      "lat": 33.943598,
+      "lon": -83.387785,
+      "seq": 15
+    },
+    {
+      "stop_id": "155125",
+      "name": "Milledge Ave. at Peabody St. Northbound",
+      "lat": 33.947901,
+      "lon": -83.387516,
+      "seq": 16
+    },
+    {
+      "stop_id": "155124",
+      "name": "Milledge Ave. at Henderson Ave.",
+      "lat": 33.950712,
+      "lon": -83.387222,
+      "seq": 17
+    },
+    {
+      "stop_id": "155122",
+      "name": "Milledge Ave. at Waddell St.",
+      "lat": 33.953176,
+      "lon": -83.387684,
+      "seq": 18
+    },
+    {
+      "stop_id": "198533",
+      "name": "Broad St. at Newton St.",
+      "lat": 33.956360823,
+      "lon": -83.380960486,
+      "seq": 19
+    },
+    {
+      "stop_id": "155096",
+      "name": "Broad St. at Hull St.",
+      "lat": 33.956959,
+      "lon": -83.378417,
+      "seq": 20
+    },
+    {
+      "stop_id": "155086",
+      "name": "The Arch/Downtown",
+      "lat": 33.957615,
+      "lon": -83.375544,
+      "seq": 21
+    },
+    {
+      "stop_id": "155085",
+      "name": "Main Library",
+      "lat": 33.955035,
+      "lon": -83.373165,
+      "seq": 22
+    }
+  ]
+}

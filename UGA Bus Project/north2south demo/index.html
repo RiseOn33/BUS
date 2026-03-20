@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>UGA North South Bus Status</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 16px; }
+    .top { display: flex; gap: 16px; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; }
+    .pill { padding: 6px 10px; border-radius: 999px; background: #eee; font-size: 14px; }
+    .grid { display: grid; gap: 10px; }
+    .row {
+      padding: 14px 16px;
+      border-radius: 12px;
+      color: #111;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 10px;
+      align-items: center;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    }
+    .driving { background: #ffd2a6; }   /* orange */
+    .stopped { background: #b7f7bf; }   /* green */
+    .label { font-size: 12px; opacity: 0.75; }
+    .value { font-weight: 650; font-size: 18px; }
+    .small { font-size: 13px; opacity: 0.8; }
+    .err { background: #ffe3e3; padding: 10px 12px; border-radius: 10px; }
+    @media (max-width: 750px){
+      .row { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="pill"><b>Route:</b> North South</div>
+    <div class="pill" id="updated">Updated: --:--:--</div>
+    <div class="pill" id="status">Status: loading…</div>
+  </div>
+
+  <div id="error"></div>
+  <div class="grid" id="grid"></div>
+
+<script>
+async function refresh(){
+  const grid = document.getElementById("grid");
+  const updated = document.getElementById("updated");
+  const status = document.getElementById("status");
+  const error = document.getElementById("error");
+
+  try{
+    const r = await fetch("/api/state", {cache: "no-store"});
+    const j = await r.json();
+
+    if(!j.ok){
+      status.textContent = "Status: error";
+      updated.textContent = "Updated: " + (j.updated || "--:--:--");
+      error.innerHTML = `<div class="err"><b>Error:</b> ${j.error || "unknown"}</div>`;
+      grid.innerHTML = "";
+      return;
+    }
+
+    status.textContent = "Status: OK";
+    updated.textContent = "Updated: " + j.updated;
+    error.innerHTML = "";
+
+    grid.innerHTML = "";
+
+    for(const b of j.buses){
+      const cls = (b.status === "STOPPED") ? "row stopped" : "row driving";
+
+      const speed = (b.speed == null) ? "n/a" : b.speed.toFixed(2) + " m/s";
+      const moved = (b.moved_m == null) ? "n/a" : b.moved_m.toFixed(1) + " m";
+      const dir = b.direction || "?";
+
+      const el = document.createElement("div");
+      el.className = cls;
+      el.innerHTML = `
+        <div>
+          <div class="label">Bus</div>
+          <div class="value">${b.busName}</div>
+        </div>
+
+        <div>
+          <div class="label">Location</div>
+          <div class="value">${b.location}</div>
+        </div>
+
+        <div>
+          <div class="label">Last update</div>
+          <div class="value">${b.reported}</div>
+        </div>
+      `;
+
+      grid.appendChild(el);
+    }
+  } catch(e){
+    status.textContent = "Status: error";
+    error.innerHTML = `<div class="err"><b>Error:</b> ${e}</div>`;
+  }
+}
+
+// refresh now + every 2s (UI) while polling happens server-side every 5s
+refresh();
+setInterval(refresh, 2000);
+</script>
+</body>
+</html>

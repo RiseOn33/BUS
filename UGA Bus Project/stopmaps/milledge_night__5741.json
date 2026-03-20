@@ -1,0 +1,140 @@
+{
+  "gtfs_route_id": "5741",
+  "route_name": "Milledge Night",
+  "representative_trip_id": "927805",
+  "stops": [
+    {
+      "stop_id": "155146",
+      "name": "Health Sciences Campus",
+      "lat": 33.9645,
+      "lon": -83.4043,
+      "seq": 1
+    },
+    {
+      "stop_id": "155155",
+      "name": "Milledge Ave. at Lucy Cobb",
+      "lat": 33.956713,
+      "lon": -83.389009,
+      "seq": 2
+    },
+    {
+      "stop_id": "198533",
+      "name": "Broad St. at Newton St.",
+      "lat": 33.956360823,
+      "lon": -83.380960486,
+      "seq": 3
+    },
+    {
+      "stop_id": "155096",
+      "name": "Broad St. at Hull St.",
+      "lat": 33.956959,
+      "lon": -83.378417,
+      "seq": 4
+    },
+    {
+      "stop_id": "155086",
+      "name": "The Arch/Downtown",
+      "lat": 33.957615,
+      "lon": -83.375544,
+      "seq": 5
+    },
+    {
+      "stop_id": "155085",
+      "name": "Main Library",
+      "lat": 33.955035,
+      "lon": -83.373165,
+      "seq": 6
+    },
+    {
+      "stop_id": "155099",
+      "name": "Tate Center - Instructional Plaza",
+      "lat": 33.951973,
+      "lon": -83.373179,
+      "seq": 7
+    },
+    {
+      "stop_id": "155101",
+      "name": "Tate Center - MLC",
+      "lat": 33.950928,
+      "lon": -83.37418,
+      "seq": 8
+    },
+    {
+      "stop_id": "155105",
+      "name": "Physics Southbound",
+      "lat": 33.947909,
+      "lon": -83.376764,
+      "seq": 9
+    },
+    {
+      "stop_id": "155112",
+      "name": "Myers/Snelling Southbound",
+      "lat": 33.946279,
+      "lon": -83.376299,
+      "seq": 10
+    },
+    {
+      "stop_id": "155131",
+      "name": "Lumpkin St. at Smith St.",
+      "lat": 33.944231,
+      "lon": -83.380654,
+      "seq": 11
+    },
+    {
+      "stop_id": "155130",
+      "name": "Lumpkin St. at Rutherford St. Southbound",
+      "lat": 33.942316,
+      "lon": -83.384513,
+      "seq": 12
+    },
+    {
+      "stop_id": "155092",
+      "name": "Milledge Ave. at Oakland Ave. Northbound",
+      "lat": 33.941294,
+      "lon": -83.387528,
+      "seq": 13
+    },
+    {
+      "stop_id": "155127",
+      "name": "Milledge Ave. at Rutherford St. Northbound",
+      "lat": 33.943598,
+      "lon": -83.387785,
+      "seq": 14
+    },
+    {
+      "stop_id": "155125",
+      "name": "Milledge Ave. at Peabody St. Northbound",
+      "lat": 33.947901,
+      "lon": -83.387516,
+      "seq": 15
+    },
+    {
+      "stop_id": "155124",
+      "name": "Milledge Ave. at Henderson Ave.",
+      "lat": 33.950712,
+      "lon": -83.387222,
+      "seq": 16
+    },
+    {
+      "stop_id": "155122",
+      "name": "Milledge Ave. at Waddell St.",
+      "lat": 33.953176,
+      "lon": -83.387684,
+      "seq": 17
+    },
+    {
+      "stop_id": "155145",
+      "name": "Prince Ave. at Nacoochee Ave.",
+      "lat": 33.962229,
+      "lon": -83.395411,
+      "seq": 18
+    },
+    {
+      "stop_id": "155146",
+      "name": "Health Sciences Campus",
+      "lat": 33.9645,
+      "lon": -83.4043,
+      "seq": 19
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "gtfs_route_id": "5752",
+  "route_name": "Chicopee Shuttle",
+  "representative_trip_id": "740685",
+  "stops": [
+    {
+      "stop_id": "155162",
+      "name": "Lot N01",
+      "lat": 33.9579,
+      "lon": -83.365963,
+      "seq": 1
+    },
+    {
+      "stop_id": "176269",
+      "name": "School of Social Work Inbound",
+      "lat": 33.953470766,
+      "lon": -83.3694753,
+      "seq": 2
+    },
+    {
+      "stop_id": "155099",
+      "name": "Tate Center - Instructional Plaza",
+      "lat": 33.951973,
+      "lon": -83.373179,
+      "seq": 3
+    },
+    {
+      "stop_id": "155163",
+      "name": "School of Social Work Outbound",
+      "lat": 33.95344,
+      "lon": -83.369481,
+      "seq": 4
+    },
+    {
+      "stop_id": "155162",
+      "name": "Lot N01",
+      "lat": 33.9579,
+      "lon": -83.365963,
+      "seq": 5
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "gtfs_route_id": "5744",
+  "route_name": "West Campus",
+  "representative_trip_id": "923346",
+  "stops": [
+    {
+      "stop_id": "155103",
+      "name": "West Campus at Russell Hall Northbound",
+      "lat": 33.949587,
+      "lon": -83.380566,
+      "seq": 1
+    },
+    {
+      "stop_id": "198535",
+      "name": "Hull St. at BLC",
+      "lat": 33.953219696,
+      "lon": -83.378325598,
+      "seq": 2
+    },
+    {
+      "stop_id": "171407",
+      "name": "Wray St.at Lumpkin St.",
+      "lat": 33.955256299,
+      "lon": -83.376606981,
+      "seq": 3
+    },
+    {
+      "stop_id": "155086",
+      "name": "The Arch/Downtown",
+      "lat": 33.957615,
+      "lon": -83.375544,
+      "seq": 4
+    },
+    {
+      "stop_id": "155085",
+      "name": "Main Library",
+      "lat": 33.955035,
+      "lon": -83.373165,
+      "seq": 5
+    },
+    {
+      "stop_id": "155099",
+      "name": "Tate Center - Instructional Plaza",
+      "lat": 33.951973,
+      "lon": -83.373179,
+      "seq": 6
+    },
+    {
+      "stop_id": "155101",
+      "name": "Tate Center - MLC",
+      "lat": 33.950928,
+      "lon": -83.37418,
+      "seq": 7
+    },
+    {
+      "stop_id": "155105",
+      "name": "Physics Southbound",
+      "lat": 33.947909,
+      "lon": -83.376764,
+      "seq": 8
+    },
+    {
+      "stop_id": "155107",
+      "name": "Rutherford Hall Westbound",
+      "lat": 33.947555,
+      "lon": -83.377133187,
+      "seq": 9
+    },
+    {
+      "stop_id": "155103",
+      "name": "West Campus at Russell Hall Northbound",
+      "lat": 33.949587,
+      "lon": -83.380566,
+      "seq": 10
+    }
+  ]
+}

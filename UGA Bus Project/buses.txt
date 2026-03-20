@@ -1,0 +1,5 @@
+#UGA Buses API End Point
+
+curl 'https://passiogo.com/mapGetData.php?getBuses=1&deviceId=124212705&speed=1' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  --data-raw 'json={"s0":"3994","sA":1}'

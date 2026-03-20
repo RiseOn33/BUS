@@ -1,0 +1,91 @@
+{
+  "gtfs_route_id": "5739",
+  "route_name": "Health Science",
+  "representative_trip_id": "927300",
+  "stops": [
+    {
+      "stop_id": "155146",
+      "name": "Health Sciences Campus",
+      "lat": 33.9645,
+      "lon": -83.4043,
+      "seq": 1
+    },
+    {
+      "stop_id": "155155",
+      "name": "Milledge Ave. at Lucy Cobb",
+      "lat": 33.956713,
+      "lon": -83.389009,
+      "seq": 2
+    },
+    {
+      "stop_id": "198533",
+      "name": "Broad St. at Newton St.",
+      "lat": 33.956360823,
+      "lon": -83.380960486,
+      "seq": 3
+    },
+    {
+      "stop_id": "155096",
+      "name": "Broad St. at Hull St.",
+      "lat": 33.956959,
+      "lon": -83.378417,
+      "seq": 4
+    },
+    {
+      "stop_id": "197666",
+      "name": "Lumpkin St. at Wray St. Southbound",
+      "lat": 33.955361978,
+      "lon": -83.376532885,
+      "seq": 5
+    },
+    {
+      "stop_id": "155153",
+      "name": "Lumpkin St. at BLC",
+      "lat": 33.952409,
+      "lon": -83.376685,
+      "seq": 6
+    },
+    {
+      "stop_id": "198803",
+      "name": "Myers/Snelling Northbound",
+      "lat": 33.945465065,
+      "lon": -83.376504078,
+      "seq": 7
+    },
+    {
+      "stop_id": "155104",
+      "name": "Physics Northbound",
+      "lat": 33.948332,
+      "lon": -83.376913,
+      "seq": 8
+    },
+    {
+      "stop_id": "155100",
+      "name": "Tate Center - Memorial Hall",
+      "lat": 33.951439,
+      "lon": -83.374245,
+      "seq": 9
+    },
+    {
+      "stop_id": "155097",
+      "name": "Lumpkin St. at Wray St. Northbound",
+      "lat": 33.95458,
+      "lon": -83.376482,
+      "seq": 10
+    },
+    {
+      "stop_id": "155145",
+      "name": "Prince Ave. at Nacoochee Ave.",
+      "lat": 33.962229,
+      "lon": -83.395411,
+      "seq": 11
+    },
+    {
+      "stop_id": "155146",
+      "name": "Health Sciences Campus",
+      "lat": 33.9645,
+      "lon": -83.4043,
+      "seq": 12
+    }
+  ]
+}

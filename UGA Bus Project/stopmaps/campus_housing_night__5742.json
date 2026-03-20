@@ -1,0 +1,203 @@
+{
+  "gtfs_route_id": "5742",
+  "route_name": "Campus Housing Night",
+  "representative_trip_id": "923375",
+  "stops": [
+    {
+      "stop_id": "175017",
+      "name": "University Village Circle",
+      "lat": 33.926283572,
+      "lon": -83.377377373,
+      "seq": 1
+    },
+    {
+      "stop_id": "177708",
+      "name": "Brandon Oaks",
+      "lat": 33.929417971,
+      "lon": -83.379039682,
+      "seq": 2
+    },
+    {
+      "stop_id": "175103",
+      "name": "East Campus Rd. at Rogers Rd.",
+      "lat": 33.931126561,
+      "lon": -83.377891192,
+      "seq": 3
+    },
+    {
+      "stop_id": "155090",
+      "name": "University Village Building G",
+      "lat": 33.933902,
+      "lon": -83.37598,
+      "seq": 4
+    },
+    {
+      "stop_id": "155137",
+      "name": "University Village Building F",
+      "lat": 33.935232,
+      "lon": -83.375304,
+      "seq": 5
+    },
+    {
+      "stop_id": "155094",
+      "name": "East Campus Village",
+      "lat": 33.938039,
+      "lon": -83.368513,
+      "seq": 6
+    },
+    {
+      "stop_id": "155088",
+      "name": "Aderhold Hall Westbound",
+      "lat": 33.941314,
+      "lon": -83.372864,
+      "seq": 7
+    },
+    {
+      "stop_id": "155116",
+      "name": "Plant Sciences",
+      "lat": 33.94187,
+      "lon": -83.375106,
+      "seq": 8
+    },
+    {
+      "stop_id": "155117",
+      "name": "Coliseum/SLC Westbound",
+      "lat": 33.942887,
+      "lon": -83.377231,
+      "seq": 9
+    },
+    {
+      "stop_id": "198803",
+      "name": "Myers/Snelling Northbound",
+      "lat": 33.945465065,
+      "lon": -83.376504078,
+      "seq": 10
+    },
+    {
+      "stop_id": "155107",
+      "name": "Rutherford Hall Westbound",
+      "lat": 33.947555,
+      "lon": -83.377133187,
+      "seq": 11
+    },
+    {
+      "stop_id": "155103",
+      "name": "West Campus at Russell Hall Northbound",
+      "lat": 33.949587,
+      "lon": -83.380566,
+      "seq": 12
+    },
+    {
+      "stop_id": "198535",
+      "name": "Hull St. at BLC",
+      "lat": 33.953219696,
+      "lon": -83.378325598,
+      "seq": 13
+    },
+    {
+      "stop_id": "155086",
+      "name": "The Arch/Downtown",
+      "lat": 33.957615,
+      "lon": -83.375544,
+      "seq": 14
+    },
+    {
+      "stop_id": "155085",
+      "name": "Main Library",
+      "lat": 33.955035,
+      "lon": -83.373165,
+      "seq": 15
+    },
+    {
+      "stop_id": "155099",
+      "name": "Tate Center - Instructional Plaza",
+      "lat": 33.951973,
+      "lon": -83.373179,
+      "seq": 16
+    },
+    {
+      "stop_id": "155153",
+      "name": "Lumpkin St. at BLC",
+      "lat": 33.952409,
+      "lon": -83.376685,
+      "seq": 17
+    },
+    {
+      "stop_id": "155164",
+      "name": "West Campus at Black-Diallo-Miller Hall",
+      "lat": 33.950054,
+      "lon": -83.379086,
+      "seq": 18
+    },
+    {
+      "stop_id": "155102",
+      "name": "West Campus at Creswell Hall",
+      "lat": 33.949103875,
+      "lon": -83.380219519,
+      "seq": 19
+    },
+    {
+      "stop_id": "177709",
+      "name": "West Campus at Oglethorpe House",
+      "lat": 33.948236167,
+      "lon": -83.379053094,
+      "seq": 20
+    },
+    {
+      "stop_id": "155106",
+      "name": "Rutherford Hall Eastbound",
+      "lat": 33.947538,
+      "lon": -83.376799,
+      "seq": 21
+    },
+    {
+      "stop_id": "155112",
+      "name": "Myers/Snelling Southbound",
+      "lat": 33.946279,
+      "lon": -83.376299,
+      "seq": 22
+    },
+    {
+      "stop_id": "155115",
+      "name": "Coliseum/SLC Eastbound",
+      "lat": 33.94273,
+      "lon": -83.37716,
+      "seq": 23
+    },
+    {
+      "stop_id": "155118",
+      "name": "Aderhold Hall Eastbound",
+      "lat": 33.941366,
+      "lon": -83.373177,
+      "seq": 24
+    },
+    {
+      "stop_id": "155132",
+      "name": "Joe Frank Harris Commons",
+      "lat": 33.939589,
+      "lon": -83.370619,
+      "seq": 25
+    },
+    {
+      "stop_id": "155133",
+      "name": "University Health Center",
+      "lat": 33.93676,
+      "lon": -83.372016,
+      "seq": 26
+    },
+    {
+      "stop_id": "155136",
+      "name": "University Village Building H",
+      "lat": 33.934999,
+      "lon": -83.373797,
+      "seq": 27
+    },
+    {
+      "stop_id": "175017",
+      "name": "University Village Circle",
+      "lat": 33.926283572,
+      "lon": -83.377377373,
+      "seq": 28
+    }
+  ]
+}

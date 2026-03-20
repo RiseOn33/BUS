@@ -1,0 +1,19 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_color,route_text_color
+5745,3994,C,Campus Housing,3,0D4B07,FFFFFF
+5742,3994,C-N,Campus Housing Night,3,000000,FFFFFF
+5750,3994,A,Central East,3,000ADC,FFFFFF
+5752,3994,K,Chicopee Shuttle,3,EF00B7,FFFFFF
+5746,3994,L,E23/IM Limited,3,61A8E6,000000
+5751,3994,E,East West,3,F27507,FFFFFF
+5739,3994,H,Health Science,3,EEA5DC,000000
+5748,3994,B,Main Campus,3,B90B07,FFFFFF
+5738,3994,M,Milledge,3,FE3434,FFFFFF
+5741,3994,M-N,Milledge Night,3,91A142,FFFFFF
+5749,3994,D,North South ,3,B2844B,FFFFFF
+8201,3994,D-N,North South Night,3,5E7EA1,FFFFFF
+6747,3994,R,Riverbend ,3,68EE6E,000000
+8209,3994,S,Stadium Loop,3,000000,FFFFFF
+5740,3994,V,Vet Med,3,FE7E7E,000000
+5743,3994,WE,Weekender,3,FF1C42,FFFFFF
+8251,3994,WE,Weekender Gameday Detour,3,D90202,FFFFFF
+5744,3994,W,West Campus ,3,F2C007,000000

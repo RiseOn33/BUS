@@ -1,0 +1,147 @@
+{
+  "gtfs_route_id": "5750",
+  "route_name": "Central East",
+  "representative_trip_id": "611290",
+  "stops": [
+    {
+      "stop_id": "155093",
+      "name": "Intramural Fields Deck",
+      "lat": 33.932505,
+      "lon": -83.371494,
+      "seq": 1
+    },
+    {
+      "stop_id": "155135",
+      "name": "Lot E01",
+      "lat": 33.933268,
+      "lon": -83.37086,
+      "seq": 2
+    },
+    {
+      "stop_id": "155094",
+      "name": "East Campus Village",
+      "lat": 33.938039,
+      "lon": -83.368513,
+      "seq": 3
+    },
+    {
+      "stop_id": "155113",
+      "name": "Tucker Hall Northbound",
+      "lat": 33.942312,
+      "lon": -83.37088,
+      "seq": 4
+    },
+    {
+      "stop_id": "155111",
+      "name": "I-STEM/Food Science Westbound",
+      "lat": 33.945571,
+      "lon": -83.37191,
+      "seq": 5
+    },
+    {
+      "stop_id": "155108",
+      "name": "Cedar St. Science Complex Westbound",
+      "lat": 33.947935,
+      "lon": -83.374295,
+      "seq": 6
+    },
+    {
+      "stop_id": "155104",
+      "name": "Physics Northbound",
+      "lat": 33.948332,
+      "lon": -83.376913,
+      "seq": 7
+    },
+    {
+      "stop_id": "155100",
+      "name": "Tate Center - Memorial Hall",
+      "lat": 33.951439,
+      "lon": -83.374245,
+      "seq": 8
+    },
+    {
+      "stop_id": "155097",
+      "name": "Lumpkin St. at Wray St. Northbound",
+      "lat": 33.95458,
+      "lon": -83.376482,
+      "seq": 9
+    },
+    {
+      "stop_id": "155086",
+      "name": "The Arch/Downtown",
+      "lat": 33.957615,
+      "lon": -83.375544,
+      "seq": 10
+    },
+    {
+      "stop_id": "155085",
+      "name": "Main Library",
+      "lat": 33.955035,
+      "lon": -83.373165,
+      "seq": 11
+    },
+    {
+      "stop_id": "155099",
+      "name": "Tate Center - Instructional Plaza",
+      "lat": 33.951973,
+      "lon": -83.373179,
+      "seq": 12
+    },
+    {
+      "stop_id": "155101",
+      "name": "Tate Center - MLC",
+      "lat": 33.950928,
+      "lon": -83.37418,
+      "seq": 13
+    },
+    {
+      "stop_id": "155105",
+      "name": "Physics Southbound",
+      "lat": 33.947909,
+      "lon": -83.376764,
+      "seq": 14
+    },
+    {
+      "stop_id": "155109",
+      "name": "Cedar St. Science Complex Eastbound",
+      "lat": 33.947511,
+      "lon": -83.373179,
+      "seq": 15
+    },
+    {
+      "stop_id": "155110",
+      "name": "I-STEM/Food Science Eastbound",
+      "lat": 33.945448042,
+      "lon": -83.371706494,
+      "seq": 16
+    },
+    {
+      "stop_id": "155114",
+      "name": "Tucker Hall Southbound",
+      "lat": 33.942288,
+      "lon": -83.370965,
+      "seq": 17
+    },
+    {
+      "stop_id": "155132",
+      "name": "Joe Frank Harris Commons",
+      "lat": 33.939589,
+      "lon": -83.370619,
+      "seq": 18
+    },
+    {
+      "stop_id": "155133",
+      "name": "University Health Center",
+      "lat": 33.93676,
+      "lon": -83.372016,
+      "seq": 19
+    },
+    {
+      "stop_id": "155093",
+      "name": "Intramural Fields Deck",
+      "lat": 33.932505,
+      "lon": -83.371494,
+      "seq": 20
+    }
+  ]
+}

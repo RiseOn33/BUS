@@ -1,0 +1,119 @@
+{
+  "gtfs_route_id": "5740",
+  "route_name": "Vet Med",
+  "representative_trip_id": "753330",
+  "stops": [
+    {
+      "stop_id": "155161",
+      "name": "Veterinary Medical Center",
+      "lat": 33.919963,
+      "lon": -83.34566,
+      "seq": 1
+    },
+    {
+      "stop_id": "177230",
+      "name": "Lot E26",
+      "lat": 33.920497908,
+      "lon": -83.34785986,
+      "seq": 2
+    },
+    {
+      "stop_id": "155149",
+      "name": "College Station Rd. at PDRC Westbound",
+      "lat": 33.927244,
+      "lon": -83.355517,
+      "seq": 3
+    },
+    {
+      "stop_id": "155156",
+      "name": "Lot E23 College Station Park and Ride",
+      "lat": 33.936214,
+      "lon": -83.362066,
+      "seq": 4
+    },
+    {
+      "stop_id": "155158",
+      "name": "College Station Rd. at Riverbend Rd. Westbound",
+      "lat": 33.932085067,
+      "lon": -83.364082341,
+      "seq": 5
+    },
+    {
+      "stop_id": "155094",
+      "name": "East Campus Village",
+      "lat": 33.938039,
+      "lon": -83.368513,
+      "seq": 6
+    },
+    {
+      "stop_id": "155088",
+      "name": "Aderhold Hall Westbound",
+      "lat": 33.941314,
+      "lon": -83.372864,
+      "seq": 7
+    },
+    {
+      "stop_id": "155116",
+      "name": "Plant Sciences",
+      "lat": 33.94187,
+      "lon": -83.375106,
+      "seq": 8
+    },
+    {
+      "stop_id": "155119",
+      "name": "Coverdell Center Southbound",
+      "lat": 33.9415,
+      "lon": -83.376,
+      "seq": 9
+    },
+    {
+      "stop_id": "155121",
+      "name": "Driftmier Center Southbound",
+      "lat": 33.9394,
+      "lon": -83.3764,
+      "seq": 10
+    },
+    {
+      "stop_id": "155137",
+      "name": "University Village Building F",
+      "lat": 33.935232,
+      "lon": -83.375304,
+      "seq": 11
+    },
+    {
+      "stop_id": "155134",
+      "name": "College Station Rd. at Intramural Fields",
+      "lat": 33.934943,
+      "lon": -83.371488,
+      "seq": 12
+    },
+    {
+      "stop_id": "155160",
+      "name": "Lot E23 College Station Park and Ride to VMC",
+      "lat": 33.936382,
+      "lon": -83.362073,
+      "seq": 13
+    },
+    {
+      "stop_id": "155150",
+      "name": "College Station Rd. at River's Crossing",
+      "lat": 33.93096,
+      "lon": -83.358509,
+      "seq": 14
+    },
+    {
+      "stop_id": "155159",
+      "name": "College Station Rd. at PDRC Eastbound",
+      "lat": 33.927155,
+      "lon": -83.355803,
+      "seq": 15
+    },
+    {
+      "stop_id": "155161",
+      "name": "Veterinary Medical Center",
+      "lat": 33.919963,
+      "lon": -83.34566,
+      "seq": 16
+    }
+  ]
+}

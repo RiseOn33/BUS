@@ -1,0 +1,133 @@
+{
+  "gtfs_route_id": "5748",
+  "route_name": "Main Campus",
+  "representative_trip_id": "922722",
+  "stops": [
+    {
+      "stop_id": "155094",
+      "name": "East Campus Village",
+      "lat": 33.938039,
+      "lon": -83.368513,
+      "seq": 1
+    },
+    {
+      "stop_id": "155113",
+      "name": "Tucker Hall Northbound",
+      "lat": 33.942312,
+      "lon": -83.37088,
+      "seq": 2
+    },
+    {
+      "stop_id": "155111",
+      "name": "I-STEM/Food Science Westbound",
+      "lat": 33.945571,
+      "lon": -83.37191,
+      "seq": 3
+    },
+    {
+      "stop_id": "155108",
+      "name": "Cedar St. Science Complex Westbound",
+      "lat": 33.947935,
+      "lon": -83.374295,
+      "seq": 4
+    },
+    {
+      "stop_id": "155104",
+      "name": "Physics Northbound",
+      "lat": 33.948332,
+      "lon": -83.376913,
+      "seq": 5
+    },
+    {
+      "stop_id": "155100",
+      "name": "Tate Center - Memorial Hall",
+      "lat": 33.951439,
+      "lon": -83.374245,
+      "seq": 6
+    },
+    {
+      "stop_id": "155097",
+      "name": "Lumpkin St. at Wray St. Northbound",
+      "lat": 33.95458,
+      "lon": -83.376482,
+      "seq": 7
+    },
+    {
+      "stop_id": "155086",
+      "name": "The Arch/Downtown",
+      "lat": 33.957615,
+      "lon": -83.375544,
+      "seq": 8
+    },
+    {
+      "stop_id": "155085",
+      "name": "Main Library",
+      "lat": 33.955035,
+      "lon": -83.373165,
+      "seq": 9
+    },
+    {
+      "stop_id": "155099",
+      "name": "Tate Center - Instructional Plaza",
+      "lat": 33.951973,
+      "lon": -83.373179,
+      "seq": 10
+    },
+    {
+      "stop_id": "155101",
+      "name": "Tate Center - MLC",
+      "lat": 33.950928,
+      "lon": -83.37418,
+      "seq": 11
+    },
+    {
+      "stop_id": "155105",
+      "name": "Physics Southbound",
+      "lat": 33.947909,
+      "lon": -83.376764,
+      "seq": 12
+    },
+    {
+      "stop_id": "155112",
+      "name": "Myers/Snelling Southbound",
+      "lat": 33.946279,
+      "lon": -83.376299,
+      "seq": 13
+    },
+    {
+      "stop_id": "155115",
+      "name": "Coliseum/SLC Eastbound",
+      "lat": 33.94273,
+      "lon": -83.37716,
+      "seq": 14
+    },
+    {
+      "stop_id": "155118",
+      "name": "Aderhold Hall Eastbound",
+      "lat": 33.941366,
+      "lon": -83.373177,
+      "seq": 15
+    },
+    {
+      "stop_id": "155132",
+      "name": "Joe Frank Harris Commons",
+      "lat": 33.939589,
+      "lon": -83.370619,
+      "seq": 16
+    },
+    {
+      "stop_id": "155133",
+      "name": "University Health Center",
+      "lat": 33.93676,
+      "lon": -83.372016,
+      "seq": 17
+    },
+    {
+      "stop_id": "155094",
+      "name": "East Campus Village",
+      "lat": 33.938039,
+      "lon": -83.368513,
+      "seq": 18
+    }
+  ]
+}
