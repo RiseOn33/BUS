@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>North South Live Trigger Map</title>
+  <style>
+    :root {
+      --page: #f5f1e8;
+      --panel: #fffdfa;
+      --ink: #1f1b16;
+      --muted: #6f665a;
+      --bus: #f28c28;
+      --stop: #111111;
+      --intermediate: #b02639;
+      --border: #d9cebf;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top, #fff8ee 0%, var(--page) 60%);
+    }
+
+    .layout {
+      width: min(1200px, calc(100vw - 32px));
+      margin: 24px auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 360px);
+      gap: 20px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(48, 35, 23, 0.08);
+      overflow: hidden;
+    }
+
+    .map-shell {
+      padding: 18px;
+    }
+
+    .map-frame {
+      position: relative;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #ebe1d3;
+    }
+
+    .map-frame img {
+      width: 100%;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+    }
+
+    .point {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      border-radius: 999px;
+      pointer-events: none;
+    }
+
+    .point.stop {
+      width: 11px;
+      height: 11px;
+      background: var(--stop);
+    }
+
+    .point.intermediate {
+      width: 8px;
+      height: 8px;
+      background: var(--intermediate);
+    }
+
+    .point.active {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      background: var(--bus);
+      border: 2px solid #7a3f00;
+      box-shadow: 0 0 0 4px rgba(242, 140, 40, 0.18);
+      z-index: 5;
+    }
+
+    .sidebar {
+      padding: 20px;
+      display: grid;
+      gap: 16px;
+      align-content: start;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    .meta, .bus-card, .legend, .error {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      background: #fffaf2;
+    }
+
+    .meta-line {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .bus-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .bus-name {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .bus-detail {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: #000;
+      flex: 0 0 auto;
+    }
+
+    .swatch.square {
+      border-radius: 3px;
+      background: var(--bus);
+      border: 2px solid #7a3f00;
+      width: 14px;
+      height: 14px;
+    }
+
+    .swatch.stop { background: var(--stop); }
+    .swatch.intermediate { background: var(--intermediate); width: 10px; height: 10px; }
+    .link-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .link-row a { color: #8b4012; font-weight: 700; text-decoration: none; }
+
+    @media (max-width: 960px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <section class="panel map-shell">
+      <div class="map-frame">
+        <img id="map-image" alt="North South trigger map">
+        <div class="overlay" id="overlay"></div>
+      </div>
+    </section>
+
+    <aside class="panel sidebar">
+      <div>
+        <h1 id="view-title">North South Live Trigger Map</h1>
+        <div class="meta" id="meta">Loading map state...</div>
+      </div>
+
+      <div class="legend">
+        <div class="legend-item"><span class="swatch stop"></span> Named stop trigger point</div>
+        <div class="legend-item"><span class="swatch intermediate"></span> Intermediate trigger point</div>
+        <div class="legend-item"><span class="swatch square"></span> Active bus position</div>
+      </div>
+
+      <div class="meta">
+        <div class="link-row">
+          <a href="/">Version chooser</a>
+          <a href="/maps/full">Full map</a>
+          <a href="/maps/segmented">Segmented map</a>
+        </div>
+      </div>
+
+      <div id="error"></div>
+      <div class="bus-list" id="bus-list"></div>
+    </aside>
+  </div>
+
+  <script>
+    const mode = window.location.pathname.includes("/full") ? "full" : "segmented";
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "\"": "&quot;",
+        "'": "&#39;"
+      }[char]));
+    }
+
+    function renderOverlay(points, buses, imageWidth, imageHeight) {
+      const overlay = document.getElementById("overlay");
+      overlay.innerHTML = "";
+
+      const activePointIds = new Set(buses.map((bus) => bus.pointId));
+
+      for (const point of points) {
+        const el = document.createElement("div");
+        const isActive = activePointIds.has(point.id);
+        el.className = `point ${point.type} ${isActive ? "active" : ""}`.trim();
+        el.style.left = `${(point.x / imageWidth) * 100}%`;
+        el.style.top = `${(point.y / imageHeight) * 100}%`;
+        el.title = point.label;
+        overlay.appendChild(el);
+      }
+    }
+
+    function renderSidebar(state) {
+      const title = document.getElementById("view-title");
+      const meta = document.getElementById("meta");
+      const error = document.getElementById("error");
+      const busList = document.getElementById("bus-list");
+
+      title.textContent = `North South ${state.mapName} Trigger Map`;
+
+      if (!state.ok) {
+        meta.innerHTML = `<b>Status:</b> error<div class="meta-line">Updated: ${escapeHtml(state.updated || "--:--:--")}</div>`;
+        error.innerHTML = `<div class="error"><b>Feed error:</b> ${escapeHtml(state.error || "unknown")}</div>`;
+        busList.innerHTML = "";
+        return;
+      }
+
+      error.innerHTML = "";
+      meta.innerHTML = `<b>Status:</b> live<div class="meta-line">Updated: ${escapeHtml(state.updated)}</div><div class="meta-line">Map: ${escapeHtml(state.mapName)}</div><div class="meta-line">Active buses: ${state.buses.length}</div>`;
+
+      if (!state.buses.length) {
+        busList.innerHTML = `<div class="bus-card">No active North South buses were returned by the feed.</div>`;
+        return;
+      }
+
+      busList.innerHTML = state.buses.map((bus) => `
+        <div class="bus-card">
+          <div class="bus-name">${escapeHtml(bus.busName)}</div>
+          <div class="bus-detail">${escapeHtml(bus.pointLabel)}</div>
+          <div class="bus-detail">Nearest trigger: ${escapeHtml(bus.pointType)} at ${escapeHtml(bus.distanceToPointM)} m</div>
+          <div class="bus-detail">Reported: ${escapeHtml(bus.reported)}</div>
+        </div>
+      `).join("");
+    }
+
+    async function refresh() {
+      const response = await fetch(`/api/state/${mode}`, { cache: "no-store" });
+      const state = await response.json();
+
+      const img = document.getElementById("map-image");
+      const fileName = state.mapImage.split("/").pop();
+      if (!img.src || !img.src.endsWith(fileName)) {
+        img.src = `/map_references/${fileName}`;
+      }
+
+      renderOverlay(state.points || [], state.buses || [], state.imageWidth, state.imageHeight);
+      renderSidebar(state);
+    }
+
+    refresh().catch((error) => {
+      document.getElementById("error").innerHTML = `<div class="error"><b>UI error:</b> ${escapeHtml(error)}</div>`;
+    });
+    setInterval(() => refresh().catch(() => {}), 3000);
+  </script>
+</body>
+</html>

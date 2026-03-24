@@ -1,0 +1,208 @@
+{
+  "map_name": "Full",
+  "map_image": "../map_references/Gemini_Generated_Image_t2kpmmt2kpmmt2kp.png",
+  "image_width": 896,
+  "image_height": 1180,
+  "points": [
+    {
+      "id": "full_stop_01",
+      "label": "Lot E23 College Station Park and Ride",
+      "type": "stop",
+      "sequence": 1,
+      "lat": 33.936214,
+      "lon": -83.362066,
+      "x": 708,
+      "y": 990
+    },
+    {
+      "id": "full_stop_02",
+      "label": "College Station Rd. at Riverbend Rd. Westbound",
+      "type": "stop",
+      "sequence": 2,
+      "lat": 33.932085067,
+      "lon": -83.364082341,
+      "x": 644,
+      "y": 1112
+    },
+    {
+      "id": "full_stop_03",
+      "label": "University Village Building C",
+      "type": "stop",
+      "sequence": 3,
+      "lat": 33.935267078,
+      "lon": -83.375522825,
+      "x": 287,
+      "y": 1030
+    },
+    {
+      "id": "full_stop_04",
+      "label": "Driftmier Center Northbound",
+      "type": "stop",
+      "sequence": 4,
+      "lat": 33.9393,
+      "lon": -83.3763,
+      "x": 262,
+      "y": 890
+    },
+    {
+      "id": "full_stop_05",
+      "label": "Coverdell Center Northbound",
+      "type": "stop",
+      "sequence": 5,
+      "lat": 33.94142781,
+      "lon": -83.37594537,
+      "x": 266,
+      "y": 840
+    },
+    {
+      "id": "full_stop_06",
+      "label": "Coliseum/SLC Westbound",
+      "type": "stop",
+      "sequence": 6,
+      "lat": 33.942887,
+      "lon": -83.377231,
+      "x": 228,
+      "y": 790
+    },
+    {
+      "id": "full_stop_07",
+      "label": "Myers/Snelling Northbound",
+      "type": "stop",
+      "sequence": 7,
+      "lat": 33.945465065,
+      "lon": -83.376504078,
+      "x": 251,
+      "y": 710
+    },
+    {
+      "id": "full_stop_08",
+      "label": "Physics Northbound",
+      "type": "stop",
+      "sequence": 8,
+      "lat": 33.948332,
+      "lon": -83.376913,
+      "x": 236,
+      "y": 621
+    },
+    {
+      "id": "full_stop_09",
+      "label": "Tate Center - Memorial Hall",
+      "type": "stop",
+      "sequence": 9,
+      "lat": 33.951439,
+      "lon": -83.374245,
+      "x": 321,
+      "y": 550
+    },
+    {
+      "id": "full_stop_10",
+      "label": "North Deck",
+      "type": "stop",
+      "sequence": 10,
+      "lat": 33.956539,
+      "lon": -83.37359,
+      "x": 308,
+      "y": 360
+    },
+    {
+      "id": "full_stop_11",
+      "label": "ACC Multi-Modal Transportation Center Bay L",
+      "type": "stop",
+      "sequence": 11,
+      "lat": 33.959711,
+      "lon": -83.370668,
+      "x": 435,
+      "y": 255
+    },
+    {
+      "id": "full_stop_12",
+      "label": "Main Library",
+      "type": "stop",
+      "sequence": 12,
+      "lat": 33.955035,
+      "lon": -83.373165,
+      "x": 356,
+      "y": 415
+    },
+    {
+      "id": "full_stop_13",
+      "label": "Tate Center - Instructional Plaza",
+      "type": "stop",
+      "sequence": 13,
+      "lat": 33.951973,
+      "lon": -83.373179,
+      "x": 355,
+      "y": 503
+    },
+    {
+      "id": "full_stop_14",
+      "label": "Tate Center - MLC",
+      "type": "stop",
+      "sequence": 14,
+      "lat": 33.950928,
+      "lon": -83.37418,
+      "x": 324,
+      "y": 538
+    },
+    {
+      "id": "full_stop_15",
+      "label": "Physics Southbound",
+      "type": "stop",
+      "sequence": 15,
+      "lat": 33.947909,
+      "lon": -83.376764,
+      "x": 241,
+      "y": 636
+    },
+    {
+      "id": "full_stop_16",
+      "label": "Myers/Snelling Southbound",
+      "type": "stop",
+      "sequence": 16,
+      "lat": 33.946279,
+      "lon": -83.376299,
+      "x": 257,
+      "y": 685
+    },
+    {
+      "id": "full_stop_17",
+      "label": "Coliseum/SLC Eastbound",
+      "type": "stop",
+      "sequence": 17,
+      "lat": 33.94273,
+      "lon": -83.37716,
+      "x": 228,
+      "y": 803
+    },
+    {
+      "id": "full_stop_18",
+      "label": "Coverdell Center Southbound",
+      "type": "stop",
+      "sequence": 18,
+      "lat": 33.9415,
+      "lon": -83.376,
+      "x": 266,
+      "y": 834
+    },
+    {
+      "id": "full_stop_19",
+      "label": "Driftmier Center Southbound",
+      "type": "stop",
+      "sequence": 19,
+      "lat": 33.9394,
+      "lon": -83.3764,
+      "x": 253,
+      "y": 890
+    },
+    {
+      "id": "full_stop_20",
+      "label": "University Village Building F",
+      "type": "stop",
+      "sequence": 20,
+      "lat": 33.935232,
+      "lon": -83.375304,
+      "x": 259,
+      "y": 1070
+    }
+  ]
+}
